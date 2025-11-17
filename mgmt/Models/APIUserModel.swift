@@ -7,12 +7,11 @@
 
 import Foundation
 
-struct User : Codable, Identifiable, Hashable {
-    let id: UUID
-    let joinedAt: Date
+struct APIUser: Codable, Hashable, Identifiable {
+    let id: String
     let name: String
     let email: String
-    
     let isAdmin: Bool
     var hasAccess: Bool
 }
+

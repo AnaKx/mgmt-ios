@@ -58,6 +58,7 @@ struct SignUpView: View {
                 
                 CustomInputField(label: "Email", text: $email)
                     .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
                 if !emailError.isEmpty {
                     Text(emailError)
                         .padding(.vertical, -60)
@@ -94,7 +95,7 @@ struct SignUpView: View {
                             do {
                                 let response = try await APIService.signup(
                                     name: name,
-                                    email: email,
+                                    email: email.lowercased(),
                                     password: password,
                                     isAdmin: newUserIsAdmin
                                 )

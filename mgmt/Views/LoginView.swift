@@ -48,6 +48,7 @@ struct LoginView: View {
                 
                 CustomInputField(label: "Email", text: $email)
                 .textInputAutocapitalization(.never)
+                .autocorrectionDisabled()
                 if !emailError.isEmpty {
                     Text(emailError)
                         .padding(.vertical, -60)

@@ -117,27 +117,3 @@ class APIService {
     }
 
 }
-
-// Response models
-struct SignupResponse: Codable {
-    let message: String
-    let user: APIUser
-}
-
-struct LoginResponse: Codable {
-    let message: String
-    let token: String
-    let user: APIUser
-}
-
-struct APIUser: Codable, Hashable, Identifiable {
-    let id: String
-    let name: String
-    let email: String
-    let isAdmin: Bool
-    var hasAccess: Bool
-}
-
-struct UsersResponse: Codable {
-    let users: [APIUser]
-}
