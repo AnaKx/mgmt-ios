@@ -1,4 +1,4 @@
-# mgmt iOS - User Management Application
+# mngmt iOS - User Management Application
 
 A native iOS application built with SwiftUI, featuring secure authentication, role-based access control, and modern user management capabilities.
 
@@ -20,7 +20,7 @@ This project was developed to demonstrate proficiency in:
 - **Architecture**: Model-View with service layers
 - **Networking**: URLSession with async/await
 - **Security**: Keychain Services, UserDefaults
-- **Backend**: [mgmt-api](https://github.com/anakx/mgmt-api)
+- **Backend**: [mngmt-api](https://github.com/anakx/mngmt-api)
 
 ## ✨ Features
 
@@ -142,4 +142,4 @@ SignUpView   LoginView     AdminView
 
 ## 🔗 Related Projects
 
-- [mgmt-api](https://github.com/anakx/mgmt-api) - Backend REST API
+- [mngmt-api](https://github.com/anakx/mngmt-api) - Backend REST API
